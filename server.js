@@ -1,11 +1,12 @@
 const express = require('express');
+const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.listen(3000, () => {
-  console.log('Aplicación escuchando en el puerto 3000');
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
 app.get('/api/users', (req, res) => {
@@ -27,8 +28,5 @@ app.get('/api/data', (req, res) => {
   res.json(data);
 });
 
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000');
-});
   
 

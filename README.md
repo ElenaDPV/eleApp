@@ -12,3 +12,10 @@ npm start
 ```
 
 se abre el front automáticamente.
+
+
+para una API pública:
+
+```bash
+https://jsonplaceholder.typicode.com/posts/1
+```

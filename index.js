@@ -2,8 +2,11 @@
 const express = require('express');
 const app = express();
 
+// Archivo principal del BACKEND, lo que se envia al front
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', 'https://jsonplaceholder.typicode.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();

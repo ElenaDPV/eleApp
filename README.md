@@ -19,3 +19,12 @@ para una API pública:
 ```bash
 https://jsonplaceholder.typicode.com/posts/1
 ```
+
+para ver si se necesita actualizar el proyecto por versiones:
+
+```bash
+npm outdated
+npm update
+```
+
+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
